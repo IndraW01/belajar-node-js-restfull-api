@@ -12,7 +12,7 @@
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
   },
-  "author": "Eko Kurniawan Khannedy",
+  "author": "Indra Wijaya",
   "license": "ISC",
   "type": "module",
   "dependencies": {
