@@ -1,6 +1,10 @@
-import {web} from "./application/web.js";
-import {logger} from "./application/logging.js";
+import { web } from "./application/web.js";
+import { logger } from "./application/logging.js";
+import process from "process";
 
-web.listen(3000, () => {
-    logger.info("App start");
+const HOST = process.env.APP_HOST || "localhost";
+const PORT = process.env.APP_PORT || 3000;
+
+web.listen(PORT, HOST, () => {
+  logger.info(`App start at http://${HOST}:${PORT}`);
 });
